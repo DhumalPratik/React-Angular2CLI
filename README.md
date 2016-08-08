@@ -29,3 +29,23 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Additional Support for react.
+
+Refer: https://github.com/LookLikeAPro/Angular-2-React-Example
+
+1.  npm install --save react react-dom (Root folder of Application)
+2.  Index.html
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <!-- start of angular2-react -->
+    <script src="node_modules/react/dist/react.min.js"></script>
+    <script src="node_modules/react-dom/dist/react-dom.min.js"></script>
+    <script>var __React = React;</script> <!-- how sad -->
+    <!-- end -->
+3.  npm install -g tsd
+    //In parent folder of typings folder:
+    //If there is no typings folder, it is recommended to be put in project root, under source control as well
+    tsd install react react-dom
+    
+4.  Add angular2-react
+    Dropping angular2-react folder anywhere inside app folder"# React-Angular2CLI" 
